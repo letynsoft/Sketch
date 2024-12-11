@@ -277,4 +277,8 @@ public class SketchView: UIView {
     public func canRedo() -> Bool {
         return bufferArray.count > 0
     }
+    public func retrieve() -> UIImage? {
+        finishDrawing()
+        return image
+    }
 }
