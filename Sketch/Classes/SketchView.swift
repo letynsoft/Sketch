@@ -481,6 +481,10 @@ public class SketchView: UIView {
             confirmStampEditing(stampTool: editingStamp)
         }
     }
+    public func retrieve() -> UIImage? {
+        finishDrawing()
+        return image
+    }
 }
 
 private struct AssociatedKeys {
